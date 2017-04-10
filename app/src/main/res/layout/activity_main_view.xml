@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.33" />
+        app:layout_constraintGuide_percent="1.0" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_view"
@@ -36,7 +36,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.314"
+        app:layout_constraintVertical_bias="0.93"
         app:srcCompat="@drawable/ic_visibility" />
 
     <TextView
@@ -44,10 +44,15 @@
         style="@style/AppTheme.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_view_top"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
 
     <TextView
         android:id="@+id/text_location_label"
@@ -55,6 +60,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/location_label"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -68,6 +74,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/population_label"
+        android:visibility="gone"
         app:layout_constraintBaseline_toBaselineOf="@+id/text_location_label"
         app:layout_constraintLeft_toRightOf="@+id/text_location_label"
         app:layout_constraintRight_toLeftOf="@+id/text_founded_label" />
@@ -78,6 +85,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/founded_label"
+        android:visibility="gone"
         app:layout_constraintBaseline_toBaselineOf="@+id/text_population_label"
         app:layout_constraintLeft_toRightOf="@+id/text_population_label"
         app:layout_constraintRight_toRightOf="parent" />
@@ -89,6 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/location_description"
+        android:visibility="gone"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/text_population_descr"
@@ -100,6 +109,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/population_description"
+        android:visibility="gone"
         app:layout_constraintBaseline_toBaselineOf="@+id/text_location_descr"
         app:layout_constraintLeft_toRightOf="@+id/text_location_descr"
         app:layout_constraintRight_toLeftOf="@+id/text_founded_descr"
@@ -111,6 +121,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/founded_description"
+        android:visibility="gone"
         app:layout_constraintBaseline_toBaselineOf="@+id/text_population_descr"
         app:layout_constraintLeft_toRightOf="@+id/text_population_descr"
         app:layout_constraintRight_toRightOf="parent" />
@@ -119,6 +130,7 @@
         android:id="@+id/image_view_logo"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintLeft_toLeftOf="@+id/guideline3"
@@ -145,6 +157,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:visibility="gone"
         app:layout_constraintGuide_percent="0.74" />
 
     <android.support.constraint.Guideline
@@ -152,6 +165,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:visibility="gone"
         app:layout_constraintGuide_percent="0.97" />
 
     <TextView
@@ -159,11 +173,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginRight="16dp"
-        android:textSize="12sp"
         android:text="@string/banff_description"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintLeft_toLeftOf="@+id/guideline9"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline10"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
 </android.support.constraint.ConstraintLayout>
